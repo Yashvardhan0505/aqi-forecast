@@ -1,0 +1,75 @@
+name: Daily forecast
+
+on:
+  schedule:
+    - cron: "40 3 * * *"  # 09:10 IST, after yesterday's readings have arrived
+  workflow_dispatch:
+    inputs:
+      force_backtest:
+        description: Rerun the backtest on this run
+        type: boolean
+        default: false
+
+concurrency:
+  group: daily-forecast
+  cancel-in-progress: false
+
+jobs:
+  forecast:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45  # the first run downloads years of history for every city
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Download data, forecast, score and build the page
+        env:
+          OPENAQ_API_KEY: ${{ secrets.OPENAQ_API_KEY }}
+          FORCE_BACKTEST: ${{ inputs.force_backtest }}
+        run: |
+          if [ "$FORCE_BACKTEST" = "true" ]; then
+            python -m aqi run --force-backtest
+          else
+            python -m aqi run
+          fi
+
+      - name: Commit the new data and page
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data docs
+          if git diff --cached --quiet; then
+            echo "Nothing new to commit."
+          else
+            git commit -m "Forecast $(TZ=Asia/Kolkata date +%F)"
+            git pull --rebase
+            git push
+          fi
+
+      - name: Package the page for GitHub Pages
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+
+  deploy:
+    needs: forecast
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

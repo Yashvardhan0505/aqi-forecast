@@ -1,0 +1,48 @@
+# Settings for the daily forecast.
+#
+# Cities: add, remove or reorder [[cities]] blocks. The first one is the page people
+# see at the main link; the others are one click away in the city switcher.
+# The box (bbox) only needs to cover the city's monitors: [west, south, east, north].
+
+[[cities]]
+name = "Jaipur"
+latitude = 26.9124
+longitude = 75.7873
+timezone = "Asia/Kolkata"
+bbox = [75.60, 26.70, 76.00, 27.10]
+
+[[cities]]
+name = "Delhi"
+latitude = 28.6139
+longitude = 77.2090
+timezone = "Asia/Kolkata"
+bbox = [76.84, 28.40, 77.35, 28.88]
+
+[[cities]]
+name = "Mumbai"
+latitude = 19.0760
+longitude = 72.8777
+timezone = "Asia/Kolkata"
+bbox = [72.77, 18.89, 73.05, 19.30]
+
+[data]
+history_start = "2023-01-01"     # how far back the first run downloads
+min_daily_coverage = 0.66        # a station-day needs >= 66% of its hours (CPCB uses 16 of 24)
+max_valid_pm25 = 999             # daily means at or above this are treated as sensor errors
+refetch_days = 10                # re-download recent days on every run to pick up late data
+station_refresh_days = 7         # look for new or retired stations this often
+reference_monitors_only = true   # use government reference monitors, skip low-cost sensors
+
+[forecast]
+horizons = [1, 2, 3]             # days after the latest complete day: normally today, tomorrow, day after
+interval = [0.1, 0.9]            # quantiles for the 80% range shown on the page
+min_train_days = 180             # don't train a model on less history than this
+max_data_age_days = 3            # skip forecasting if the newest data is older than this
+
+[backtest]
+days = 180                       # score the model on the last N days
+retrain_every = 14               # refit inside the backtest every N days (no peeking ahead)
+refresh_days = 7                 # rerun the backtest this often
+
+[site]
+repo_url = "https://github.com/Yashvardhan0505/aqi-forecast"
