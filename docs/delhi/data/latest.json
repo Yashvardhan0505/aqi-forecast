@@ -1,0 +1,97 @@
+{
+  "city": "Delhi",
+  "generated_at": "2026-11-26T04:03+05:30",
+  "latest_measurement": {
+    "date": "2026-11-24",
+    "pm25": 106.4,
+    "aqi": 254,
+    "category": "Poor",
+    "stations": 45
+  },
+  "forecast": [
+    {
+      "date": "2026-11-26",
+      "label": "Today",
+      "horizon": 2,
+      "pm25": 139.9,
+      "lo": 90.7,
+      "hi": 180.7,
+      "aqi": 316,
+      "category": "Very poor"
+    },
+    {
+      "date": "2026-11-27",
+      "label": "Tomorrow",
+      "horizon": 3,
+      "pm25": 144.0,
+      "lo": 86.5,
+      "hi": 159.0,
+      "aqi": 319,
+      "category": "Very poor"
+    }
+  ],
+  "accuracy": {
+    "live_last_30_days": [],
+    "live_all": [],
+    "backtest": [
+      {
+        "horizon": 1,
+        "n": 177,
+        "mae_model": 12.469491525423729,
+        "rmse_model": 19.843650167683393,
+        "bias_model": 1.0909604519774005,
+        "category_hit_model": 0.711864406779661,
+        "mae_persistence": 13.941807909604519,
+        "rmse_persistence": 21.424429005042125,
+        "bias_persistence": -0.1689265536723167,
+        "category_hit_persistence": 0.5988700564971752,
+        "mae_last_week": 26.457062146892653,
+        "rmse_last_week": 42.164286572250845,
+        "bias_last_week": -1.5598870056497176,
+        "category_hit_last_week": 0.4971751412429379,
+        "skill_vs_persistence": 0.1056044089638124,
+        "skill_vs_last_week": 0.5286894872835208,
+        "interval_coverage": 0.7231638418079096
+      },
+      {
+        "horizon": 2,
+        "n": 177,
+        "mae_model": 15.442937853107345,
+        "rmse_model": 24.193053585852066,
+        "bias_model": 1.874576271186441,
+        "category_hit_model": 0.6836158192090396,
+        "mae_persistence": 18.45988700564972,
+        "rmse_persistence": 28.40135271704839,
+        "bias_persistence": -0.2971751412429378,
+        "category_hit_persistence": 0.5932203389830508,
+        "mae_last_week": 26.46553672316384,
+        "rmse_last_week": 42.17442527044863,
+        "bias_last_week": -1.568361581920904,
+        "category_hit_last_week": 0.4971751412429379,
+        "skill_vs_persistence": 0.16343269878190614,
+        "skill_vs_last_week": 0.4164887712407138,
+        "interval_coverage": 0.7853107344632768
+      },
+      {
+        "horizon": 3,
+        "n": 177,
+        "mae_model": 16.2,
+        "rmse_model": 27.0442596016443,
+        "bias_model": 2.2677966101694915,
+        "category_hit_model": 0.6892655367231638,
+        "mae_persistence": 21.32598870056497,
+        "rmse_persistence": 33.25055286061757,
+        "bias_persistence": -0.41638418079096057,
+        "category_hit_persistence": 0.519774011299435,
+        "mae_last_week": 26.550282485875705,
+        "rmse_last_week": 42.25913734644304,
+        "bias_last_week": -1.6531073446327684,
+        "category_hit_last_week": 0.4971751412429379,
+        "skill_vs_persistence": 0.2403634725938485,
+        "skill_vs_last_week": 0.38983700046814485,
+        "interval_coverage": 0.7005649717514124
+      }
+    ]
+  },
+  "demo": false
+}

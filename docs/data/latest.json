@@ -1,0 +1,296 @@
+{
+  "demo": false,
+  "cities": [
+    {
+      "city": "Jaipur",
+      "generated_at": "2026-11-26T04:03+05:30",
+      "latest_measurement": {
+        "date": "2026-11-24",
+        "pm25": 79.6,
+        "aqi": 164,
+        "category": "Moderately polluted",
+        "stations": 6
+      },
+      "forecast": [
+        {
+          "date": "2026-11-26",
+          "label": "Today",
+          "horizon": 2,
+          "pm25": 83.4,
+          "lo": 72.2,
+          "hi": 102.1,
+          "aqi": 177,
+          "category": "Moderately polluted"
+        },
+        {
+          "date": "2026-11-27",
+          "label": "Tomorrow",
+          "horizon": 3,
+          "pm25": 77.8,
+          "lo": 72.5,
+          "hi": 100.5,
+          "aqi": 158,
+          "category": "Moderately polluted"
+        }
+      ],
+      "accuracy": {
+        "live_last_30_days": [],
+        "live_all": [],
+        "backtest": [
+          {
+            "horizon": 1,
+            "n": 151,
+            "mae_model": 7.445033112582782,
+            "rmse_model": 10.147155671020354,
+            "bias_model": -0.058278145695364034,
+            "category_hit_model": 0.7682119205298014,
+            "mae_persistence": 7.486092715231789,
+            "rmse_persistence": 10.346205754281797,
+            "bias_persistence": -0.049006622516556096,
+            "category_hit_persistence": 0.7350993377483444,
+            "mae_last_week": 14.845033112582781,
+            "rmse_last_week": 21.475314644327042,
+            "bias_last_week": -0.16291390728476818,
+            "category_hit_last_week": 0.5298013245033113,
+            "skill_vs_persistence": 0.005484784147204547,
+            "skill_vs_last_week": 0.4984832262669522,
+            "interval_coverage": 0.7086092715231788
+          },
+          {
+            "horizon": 2,
+            "n": 148,
+            "mae_model": 9.79662162162162,
+            "rmse_model": 12.659290467286668,
+            "bias_model": -1.3912162162162165,
+            "category_hit_model": 0.6554054054054054,
+            "mae_persistence": 9.429054054054054,
+            "rmse_persistence": 12.411668986362269,
+            "bias_persistence": -0.39662162162162157,
+            "category_hit_persistence": 0.6756756756756757,
+            "mae_last_week": 14.985135135135133,
+            "rmse_last_week": 21.5277978688272,
+            "bias_last_week": -0.268918918918919,
+            "category_hit_last_week": 0.527027027027027,
+            "skill_vs_persistence": -0.038982443568613245,
+            "skill_vs_last_week": 0.3462440256109658,
+            "interval_coverage": 0.7432432432432432
+          },
+          {
+            "horizon": 3,
+            "n": 145,
+            "mae_model": 10.201379310344828,
+            "rmse_model": 13.028917439878589,
+            "bias_model": -1.0882758620689656,
+            "category_hit_model": 0.6068965517241379,
+            "mae_persistence": 11.897241379310344,
+            "rmse_persistence": 14.98803430786683,
+            "bias_persistence": -0.25724137931034474,
+            "category_hit_persistence": 0.5724137931034483,
+            "mae_last_week": 14.884827586206898,
+            "rmse_last_week": 20.79930867551396,
+            "bias_last_week": 0.10551724137931043,
+            "category_hit_last_week": 0.5310344827586206,
+            "skill_vs_persistence": 0.14254246130659087,
+            "skill_vs_last_week": 0.3146457860353056,
+            "interval_coverage": 0.6206896551724138
+          }
+        ]
+      },
+      "page": "jaipur/"
+    },
+    {
+      "city": "Delhi",
+      "generated_at": "2026-11-26T04:03+05:30",
+      "latest_measurement": {
+        "date": "2026-11-24",
+        "pm25": 106.4,
+        "aqi": 254,
+        "category": "Poor",
+        "stations": 45
+      },
+      "forecast": [
+        {
+          "date": "2026-11-26",
+          "label": "Today",
+          "horizon": 2,
+          "pm25": 139.9,
+          "lo": 90.7,
+          "hi": 180.7,
+          "aqi": 316,
+          "category": "Very poor"
+        },
+        {
+          "date": "2026-11-27",
+          "label": "Tomorrow",
+          "horizon": 3,
+          "pm25": 144.0,
+          "lo": 86.5,
+          "hi": 159.0,
+          "aqi": 319,
+          "category": "Very poor"
+        }
+      ],
+      "accuracy": {
+        "live_last_30_days": [],
+        "live_all": [],
+        "backtest": [
+          {
+            "horizon": 1,
+            "n": 177,
+            "mae_model": 12.469491525423729,
+            "rmse_model": 19.843650167683393,
+            "bias_model": 1.0909604519774005,
+            "category_hit_model": 0.711864406779661,
+            "mae_persistence": 13.941807909604519,
+            "rmse_persistence": 21.424429005042125,
+            "bias_persistence": -0.1689265536723167,
+            "category_hit_persistence": 0.5988700564971752,
+            "mae_last_week": 26.457062146892653,
+            "rmse_last_week": 42.164286572250845,
+            "bias_last_week": -1.5598870056497176,
+            "category_hit_last_week": 0.4971751412429379,
+            "skill_vs_persistence": 0.1056044089638124,
+            "skill_vs_last_week": 0.5286894872835208,
+            "interval_coverage": 0.7231638418079096
+          },
+          {
+            "horizon": 2,
+            "n": 177,
+            "mae_model": 15.442937853107345,
+            "rmse_model": 24.193053585852066,
+            "bias_model": 1.874576271186441,
+            "category_hit_model": 0.6836158192090396,
+            "mae_persistence": 18.45988700564972,
+            "rmse_persistence": 28.40135271704839,
+            "bias_persistence": -0.2971751412429378,
+            "category_hit_persistence": 0.5932203389830508,
+            "mae_last_week": 26.46553672316384,
+            "rmse_last_week": 42.17442527044863,
+            "bias_last_week": -1.568361581920904,
+            "category_hit_last_week": 0.4971751412429379,
+            "skill_vs_persistence": 0.16343269878190614,
+            "skill_vs_last_week": 0.4164887712407138,
+            "interval_coverage": 0.7853107344632768
+          },
+          {
+            "horizon": 3,
+            "n": 177,
+            "mae_model": 16.2,
+            "rmse_model": 27.0442596016443,
+            "bias_model": 2.2677966101694915,
+            "category_hit_model": 0.6892655367231638,
+            "mae_persistence": 21.32598870056497,
+            "rmse_persistence": 33.25055286061757,
+            "bias_persistence": -0.41638418079096057,
+            "category_hit_persistence": 0.519774011299435,
+            "mae_last_week": 26.550282485875705,
+            "rmse_last_week": 42.25913734644304,
+            "bias_last_week": -1.6531073446327684,
+            "category_hit_last_week": 0.4971751412429379,
+            "skill_vs_persistence": 0.2403634725938485,
+            "skill_vs_last_week": 0.38983700046814485,
+            "interval_coverage": 0.7005649717514124
+          }
+        ]
+      },
+      "page": "delhi/"
+    },
+    {
+      "city": "Mumbai",
+      "generated_at": "2026-11-26T04:03+05:30",
+      "latest_measurement": {
+        "date": "2026-11-24",
+        "pm25": 60.7,
+        "aqi": 101,
+        "category": "Moderately polluted",
+        "stations": 27
+      },
+      "forecast": [
+        {
+          "date": "2026-11-26",
+          "label": "Today",
+          "horizon": 2,
+          "pm25": 68.6,
+          "lo": 51.9,
+          "hi": 79.2,
+          "aqi": 127,
+          "category": "Moderately polluted"
+        },
+        {
+          "date": "2026-11-27",
+          "label": "Tomorrow",
+          "horizon": 3,
+          "pm25": 62.3,
+          "lo": 49.1,
+          "hi": 97.1,
+          "aqi": 105,
+          "category": "Moderately polluted"
+        }
+      ],
+      "accuracy": {
+        "live_last_30_days": [],
+        "live_all": [],
+        "backtest": [
+          {
+            "horizon": 1,
+            "n": 170,
+            "mae_model": 7.962941176470588,
+            "rmse_model": 19.068114746875214,
+            "bias_model": -0.6464705882352944,
+            "category_hit_model": 0.8470588235294118,
+            "mae_persistence": 7.798235294117646,
+            "rmse_persistence": 20.13355554350819,
+            "bias_persistence": -0.41117647058823514,
+            "category_hit_persistence": 0.8411764705882353,
+            "mae_last_week": 15.57470588235294,
+            "rmse_last_week": 28.067275271683755,
+            "bias_last_week": -1.1735294117647066,
+            "category_hit_last_week": 0.6941176470588235,
+            "skill_vs_persistence": -0.021120917251263638,
+            "skill_vs_last_week": 0.4887260641311326,
+            "interval_coverage": 0.8764705882352941
+          },
+          {
+            "horizon": 2,
+            "n": 169,
+            "mae_model": 11.11360946745562,
+            "rmse_model": 21.306462058347154,
+            "bias_model": -0.5313609467455612,
+            "category_hit_model": 0.7514792899408284,
+            "mae_persistence": 10.539053254437869,
+            "rmse_persistence": 22.676144178252603,
+            "bias_persistence": -1.2621301775147926,
+            "category_hit_persistence": 0.7988165680473372,
+            "mae_last_week": 15.328402366863905,
+            "rmse_last_week": 27.803365979019762,
+            "bias_last_week": -1.5189349112426034,
+            "category_hit_last_week": 0.6982248520710059,
+            "skill_vs_persistence": -0.05451687159620455,
+            "skill_vs_last_week": 0.2749662227369235,
+            "interval_coverage": 0.863905325443787
+          },
+          {
+            "horizon": 3,
+            "n": 168,
+            "mae_model": 12.170833333333334,
+            "rmse_model": 20.97858460203552,
+            "bias_model": 0.30535714285714316,
+            "category_hit_model": 0.7083333333333334,
+            "mae_persistence": 12.895238095238094,
+            "rmse_persistence": 26.52513408251197,
+            "bias_persistence": -1.0261904761904763,
+            "category_hit_persistence": 0.7678571428571429,
+            "mae_last_week": 15.094642857142858,
+            "rmse_last_week": 27.5202447127132,
+            "bias_last_week": -1.8529761904761908,
+            "category_hit_last_week": 0.6964285714285714,
+            "skill_vs_persistence": 0.056176144756277524,
+            "skill_vs_last_week": 0.19369848968807923,
+            "interval_coverage": 0.8452380952380952
+          }
+        ]
+      },
+      "page": "mumbai/"
+    }
+  ]
+}

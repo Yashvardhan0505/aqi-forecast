@@ -1,0 +1,97 @@
+{
+  "city": "Mumbai",
+  "generated_at": "2026-11-26T04:03+05:30",
+  "latest_measurement": {
+    "date": "2026-11-24",
+    "pm25": 60.7,
+    "aqi": 101,
+    "category": "Moderately polluted",
+    "stations": 27
+  },
+  "forecast": [
+    {
+      "date": "2026-11-26",
+      "label": "Today",
+      "horizon": 2,
+      "pm25": 68.6,
+      "lo": 51.9,
+      "hi": 79.2,
+      "aqi": 127,
+      "category": "Moderately polluted"
+    },
+    {
+      "date": "2026-11-27",
+      "label": "Tomorrow",
+      "horizon": 3,
+      "pm25": 62.3,
+      "lo": 49.1,
+      "hi": 97.1,
+      "aqi": 105,
+      "category": "Moderately polluted"
+    }
+  ],
+  "accuracy": {
+    "live_last_30_days": [],
+    "live_all": [],
+    "backtest": [
+      {
+        "horizon": 1,
+        "n": 170,
+        "mae_model": 7.962941176470588,
+        "rmse_model": 19.068114746875214,
+        "bias_model": -0.6464705882352944,
+        "category_hit_model": 0.8470588235294118,
+        "mae_persistence": 7.798235294117646,
+        "rmse_persistence": 20.13355554350819,
+        "bias_persistence": -0.41117647058823514,
+        "category_hit_persistence": 0.8411764705882353,
+        "mae_last_week": 15.57470588235294,
+        "rmse_last_week": 28.067275271683755,
+        "bias_last_week": -1.1735294117647066,
+        "category_hit_last_week": 0.6941176470588235,
+        "skill_vs_persistence": -0.021120917251263638,
+        "skill_vs_last_week": 0.4887260641311326,
+        "interval_coverage": 0.8764705882352941
+      },
+      {
+        "horizon": 2,
+        "n": 169,
+        "mae_model": 11.11360946745562,
+        "rmse_model": 21.306462058347154,
+        "bias_model": -0.5313609467455612,
+        "category_hit_model": 0.7514792899408284,
+        "mae_persistence": 10.539053254437869,
+        "rmse_persistence": 22.676144178252603,
+        "bias_persistence": -1.2621301775147926,
+        "category_hit_persistence": 0.7988165680473372,
+        "mae_last_week": 15.328402366863905,
+        "rmse_last_week": 27.803365979019762,
+        "bias_last_week": -1.5189349112426034,
+        "category_hit_last_week": 0.6982248520710059,
+        "skill_vs_persistence": -0.05451687159620455,
+        "skill_vs_last_week": 0.2749662227369235,
+        "interval_coverage": 0.863905325443787
+      },
+      {
+        "horizon": 3,
+        "n": 168,
+        "mae_model": 12.170833333333334,
+        "rmse_model": 20.97858460203552,
+        "bias_model": 0.30535714285714316,
+        "category_hit_model": 0.7083333333333334,
+        "mae_persistence": 12.895238095238094,
+        "rmse_persistence": 26.52513408251197,
+        "bias_persistence": -1.0261904761904763,
+        "category_hit_persistence": 0.7678571428571429,
+        "mae_last_week": 15.094642857142858,
+        "rmse_last_week": 27.5202447127132,
+        "bias_last_week": -1.8529761904761908,
+        "category_hit_last_week": 0.6964285714285714,
+        "skill_vs_persistence": 0.056176144756277524,
+        "skill_vs_last_week": 0.19369848968807923,
+        "interval_coverage": 0.8452380952380952
+      }
+    ]
+  },
+  "demo": false
+}
