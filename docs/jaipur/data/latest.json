@@ -1,8 +1,8 @@
 {
   "city": "Jaipur",
-  "generated_at": "2026-11-26T04:03+05:30",
+  "generated_at": "2026-11-26T18:34+05:30",
   "latest_measurement": {
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "pm25": 79.6,
     "aqi": 164,
     "category": "Moderately polluted",
@@ -12,27 +12,77 @@
     {
       "date": "2026-11-26",
       "label": "Today",
-      "horizon": 2,
-      "pm25": 83.4,
-      "lo": 72.2,
-      "hi": 102.1,
-      "aqi": 177,
+      "horizon": 1,
+      "pm25": 82.9,
+      "lo": 68.6,
+      "hi": 94.5,
+      "aqi": 176,
       "category": "Moderately polluted"
     },
     {
       "date": "2026-11-27",
       "label": "Tomorrow",
+      "horizon": 2,
+      "pm25": 82.5,
+      "lo": 69.6,
+      "hi": 99.3,
+      "aqi": 174,
+      "category": "Moderately polluted"
+    },
+    {
+      "date": "2026-11-28",
+      "label": "Sat, 28 Nov",
       "horizon": 3,
-      "pm25": 77.8,
-      "lo": 72.5,
-      "hi": 100.5,
-      "aqi": 158,
+      "pm25": 88.7,
+      "lo": 71.6,
+      "hi": 102.2,
+      "aqi": 196,
       "category": "Moderately polluted"
     }
   ],
   "accuracy": {
-    "live_last_30_days": [],
-    "live_all": [],
+    "live_last_30_days": [
+      {
+        "horizon": 1,
+        "n": 1,
+        "mae_model": 3.4000000000000057,
+        "rmse_model": 3.4000000000000057,
+        "bias_model": 3.4000000000000057,
+        "category_hit_model": 1.0,
+        "mae_persistence": 0.0,
+        "rmse_persistence": 0.0,
+        "bias_persistence": 0.0,
+        "category_hit_persistence": 1.0,
+        "mae_last_week": 18.39999999999999,
+        "rmse_last_week": 18.39999999999999,
+        "bias_last_week": -18.39999999999999,
+        "category_hit_last_week": 1.0,
+        "skill_vs_persistence": null,
+        "skill_vs_last_week": 0.8152173913043474,
+        "interval_coverage": 1.0
+      }
+    ],
+    "live_all": [
+      {
+        "horizon": 1,
+        "n": 1,
+        "mae_model": 3.4000000000000057,
+        "rmse_model": 3.4000000000000057,
+        "bias_model": 3.4000000000000057,
+        "category_hit_model": 1.0,
+        "mae_persistence": 0.0,
+        "rmse_persistence": 0.0,
+        "bias_persistence": 0.0,
+        "category_hit_persistence": 1.0,
+        "mae_last_week": 18.39999999999999,
+        "rmse_last_week": 18.39999999999999,
+        "bias_last_week": -18.39999999999999,
+        "category_hit_last_week": 1.0,
+        "skill_vs_persistence": null,
+        "skill_vs_last_week": 0.8152173913043474,
+        "interval_coverage": 1.0
+      }
+    ],
     "backtest": [
       {
         "horizon": 1,

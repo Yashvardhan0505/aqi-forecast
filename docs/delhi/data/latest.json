@@ -1,38 +1,88 @@
 {
   "city": "Delhi",
-  "generated_at": "2026-11-26T04:03+05:30",
+  "generated_at": "2026-11-26T18:34+05:30",
   "latest_measurement": {
-    "date": "2026-11-24",
-    "pm25": 106.4,
-    "aqi": 254,
+    "date": "2026-11-25",
+    "pm25": 108.1,
+    "aqi": 259,
     "category": "Poor",
-    "stations": 45
+    "stations": 48
   },
   "forecast": [
     {
       "date": "2026-11-26",
       "label": "Today",
-      "horizon": 2,
-      "pm25": 139.9,
-      "lo": 90.7,
-      "hi": 180.7,
-      "aqi": 316,
-      "category": "Very poor"
+      "horizon": 1,
+      "pm25": 108.8,
+      "lo": 95.9,
+      "hi": 137.7,
+      "aqi": 262,
+      "category": "Poor"
     },
     {
       "date": "2026-11-27",
       "label": "Tomorrow",
+      "horizon": 2,
+      "pm25": 128.8,
+      "lo": 90.9,
+      "hi": 159.2,
+      "aqi": 307,
+      "category": "Very poor"
+    },
+    {
+      "date": "2026-11-28",
+      "label": "Sat, 28 Nov",
       "horizon": 3,
-      "pm25": 144.0,
-      "lo": 86.5,
-      "hi": 159.0,
-      "aqi": 319,
+      "pm25": 132.1,
+      "lo": 87.8,
+      "hi": 170.4,
+      "aqi": 310,
       "category": "Very poor"
     }
   ],
   "accuracy": {
-    "live_last_30_days": [],
-    "live_all": [],
+    "live_last_30_days": [
+      {
+        "horizon": 1,
+        "n": 1,
+        "mae_model": 14.700000000000003,
+        "rmse_model": 14.700000000000003,
+        "bias_model": 14.700000000000003,
+        "category_hit_model": 0.0,
+        "mae_persistence": 1.6999999999999886,
+        "rmse_persistence": 1.6999999999999886,
+        "bias_persistence": -1.6999999999999886,
+        "category_hit_persistence": 1.0,
+        "mae_last_week": 18.400000000000006,
+        "rmse_last_week": 18.400000000000006,
+        "bias_last_week": 18.400000000000006,
+        "category_hit_last_week": 0.0,
+        "skill_vs_persistence": -7.647058823529472,
+        "skill_vs_last_week": 0.20108695652173925,
+        "interval_coverage": 1.0
+      }
+    ],
+    "live_all": [
+      {
+        "horizon": 1,
+        "n": 1,
+        "mae_model": 14.700000000000003,
+        "rmse_model": 14.700000000000003,
+        "bias_model": 14.700000000000003,
+        "category_hit_model": 0.0,
+        "mae_persistence": 1.6999999999999886,
+        "rmse_persistence": 1.6999999999999886,
+        "bias_persistence": -1.6999999999999886,
+        "category_hit_persistence": 1.0,
+        "mae_last_week": 18.400000000000006,
+        "rmse_last_week": 18.400000000000006,
+        "bias_last_week": 18.400000000000006,
+        "category_hit_last_week": 0.0,
+        "skill_vs_persistence": -7.647058823529472,
+        "skill_vs_last_week": 0.20108695652173925,
+        "interval_coverage": 1.0
+      }
+    ],
     "backtest": [
       {
         "horizon": 1,
